@@ -1,0 +1,224 @@
+html{
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+header{
+    padding: 0;
+    margin: 0;
+}
+.suvVisualArea >div >div{
+    display:table-cell;
+    width: 100%;
+    text-align: center;
+}
+.top_img{
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 410px;
+    margin: 0 auto;
+}
+.topTitle{
+    position: absolute;
+    top: 200px;
+    padding: 0 40%;
+    margin: 0 auto;
+    color: ivory;
+}
+h1.topTitle {
+    font-size: 56px;
+}
+
+/*nav bar*/
+.topNav{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: ivory;
+    background-color:#0000009c;
+    align-items: center;
+}
+.topNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.topNav ul li{
+    float: left;
+    color: ivory;
+}
+.topNav ul li a{
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 10px 5px;
+    color: ivory;
+    /**background-color: khaki;**/
+}
+
+.leftNavContainer{
+    align-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+}
+.mainLogo{
+    width: 120px;
+    height: 45px;
+
+}
+.centerNavContainer{
+    align-content: center;
+    align-items: center;
+    flex-grow: 4;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 768px){
+    .centerNavContainer{
+        align-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    /* .centerNav{
+        font-size: 10px;
+    }
+    .rightNav{
+        font-size: 7px;
+    } */
+}
+.centerNav{
+    flex-basis: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+.rightNavContainer{
+    margin-right: 2%;
+}
+.rightNav{
+    font-size: 12px;
+}
+#wMenuLogo{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
+/*detailNav*/
+.detailNav{
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 340px;
+    background-color:white;
+    /* justify-content: space-between; */
+}
+.detailNav table{
+    margin: auto;
+    width: 100%;
+}
+.detailNav table tr td{
+    color: black;
+    list-style: none;
+    height: 5vw;
+    text-align: center;
+    width: 27%;
+
+}
+
+/*white nav*/
+.wTopNav{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    background-color:#ffffff;
+    align-items: center;
+}
+.wTopNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.wTopNav ul li{
+    float: left;
+    color: ivory;
+}
+.wTopNav ul li a{
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+}
+.leftNavContainer{
+    align-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+}
+.mainLogo{
+    width: 120px;
+    height: 45px;
+
+}
+.centerNavContainer{
+    align-content: center;
+    align-items: center;
+    flex-grow: 4;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 768px){
+    .centerNavContainer{
+        align-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    /* .centerNav{
+        font-size: 10px;
+    }
+    .rightNav{
+        font-size: 7px;
+    } */
+}
+.centerNav{
+    flex-basis: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+.rightNavContainer{
+    margin-right: 2%;
+}
+.rightNav{
+    font-size: 12px;
+}
+#rMenuLogo{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
