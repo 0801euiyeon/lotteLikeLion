@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--부트스트랩-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/topNav.css?ver=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>롯데 택배</title>
+    <!--공백제거를 위해 생성한 인라인요소-->
+    <style>
+        #Q_button{
+            margin-top: -5vmin;
+        }
+    </style>
+</head>
+<body>
+    <!-- topNav_Black.html은 모든 페이지에 공통적으로 들어가는 코드들을 넣은. 
+        상단 nav bar 코드랑 사진규격만 확인해주세요. 
+        파일명은 자신의 프로젝트에 맞게 수정하셔야 합니다.
+    EUIYEON--> 
+
+    <!-- header -->
+    <header style = "margin-bottom : 0;">
+        <div id="lotte_Slide" class="carousel_slide" data-ride="carousel" style="height: 100%; z-index: 100;" data-interval="3000"data-pause="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Main/img_delivery_01.png" class="d-block_w-100" style="height: 47vw; width: 100%;" alt="...">
+                <div class="carousel-caption d-none d-md-block" class="mainTitle" style="text-align: center; top:18vw; margin-bottom: 10vw;" >
+                  <h1 style="font-weight: 700; font-size: 3vw;">상상하고 혁신합니다.</h1>
+                  <p>고객 여러분이 상상하는 그 이상의 모습으로 <br> 물류를 구현하겠습니다.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Main/img_delivery_02.png" class="d-block_w-100" style="height: 47vw;width: 100%;" alt="...">
+                <div class="carousel-caption d-none d-md-block" class="mainTitle" style="text-align: center; top:18vw; margin-bottom: 10vw;" >
+                    <h1 style="font-weight: 700;font-size: 3vw;">상상하고 혁신합니다.</h1>
+                    <p>고객 여러분이 상상하는 그 이상의 모습으로 <br> 물류를 구현하겠습니다.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Main/img_delivery_03.png" class="d-block w-100" style="height: 47vw; width: 100%;"alt="...">
+                <div class="carousel-caption d-none d-md-block"class="mainTitle" style="text-align: center; top:18vw; margin-bottom: 10vw;" >
+                    <h1 style="font-weight: 700;font-size: 3vw;">상상하고 혁신합니다.</h1>
+                    <p>고객 여러분이 상상하는 그 이상의 모습으로 <br> 물류를 구현하겠습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div>
+            <form>
+                <ul>
+                    <li class="mainSrc" >
+                        <label>운송장번호: <input type="search" name="src" value="운송장번호를 입력하여 주세요" placeholder="운송장번호를 입력하여 주세요" ></label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </header>
+
+    <!-- nav var -->
+    <div class="navVar">
+        <nav class="topNav">
+            <ul class="leftNavContainer">
+                <a href="main.html"><img src="/img/Nav/lottelogo.png" class="mainLogo"></a>
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="#">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="#">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="#">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+            </ui>
+        </nav>
+        <div class="wTopNav" style="display: none;">
+            <ul class="leftNavContainer">
+                <img src="/img/Nav/rLotteLogo.png" class="mainLogo">
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="#">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="#">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="#">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/rMenuLogo.png" id="rMenuLogo"></li>
+            </ui>
+        </div>
+        <div class="detailNav" style="display: none">
+            <div style="display: flex;">
+                <div style="flex-grow: 0.8;">
+                </div>
+                <div style="flex-grow: 3;">
+                    <table class="detailTableContainer">
+                        <tr class="detailTable">
+                            <td><a href="#">회사소개</a></td>
+                            <td><a href="#">택배서비스</a></td>
+                            <td><a href="#">택배 조회</a></td>
+                            <td><a href="#">Q&A</a></td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>투자정보</td>
+                            <td>네트워크</td>
+                            <td>위탁장소지정</td>
+                            <td>자주 묻는 질문</td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>인재채용</td>
+                            <td></td>
+                            <td>택배접수</td>
+                            <td>고객의소리</td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>PR</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div  style="flex-grow: 1.5;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="mainBtn">
+            <!--이미지에 링크 넣을 것-->
+            <a href="#"><img src="img/Main/Q_button.png" id="Q_button"></a> 
+            <a href="#"><img src="img/Main/second_main_btn1.png" id="mainBtn1"></a>
+            <a href="#"><img src="img/Main/second_main_btn2.png" id="mainBtn2"></a>
+        </div>
+        <div class="noticeBtn" style="z-index: 100;"> 
+            <img src="img/Main/bottom_background.png" id="noticeBackground">
+            <br>
+            <h2 id="noticeTitle">공지사항</h2>
+            <div class="row align-items-center">
+                <div class="col">
+                </div>
+                <div class="col" style="border: 0.8px solid rgba(0, 0, 0, 0.247); background-color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">제목</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">부제목</h6>
+                        <p class="card-text">내용내용</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="col" style="border: 0.8px solid rgba(0, 0, 0, 0.247); background-color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">제목</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">부제목</h6>
+                        <p class="card-text">내용내용</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="col" style="border: 0.8px solid rgba(0, 0, 0, 0.247); background-color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">제목</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">부제목</h6>
+                        <p class="card-text">내용내용</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-inf1">
+            <div class="container">
+                <ul class="linklist">
+                    <li class="f-bold">개인정보처리방침</li>
+                    <li>영상정보기기운영/관리방침</li>
+                    <li>택배표준약관</li>
+                    <li>안전보건방침</li>
+                    <li>이메일주소무단수집거부</li>
+                    <li class="f-box">
+                        <a class="f-group">패밀리 사이트</a>
+                        <a class="f-group">부가서비스</a>
+
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-inf2">
+            <div class="container">
+                <img src="./img/Nav/logo.png" class="ftlogo" alt="롯데택배">
+                <ul class="f-info1">
+                    <br><br>
+                    <li>서울시 중구 통일로 10(연세 세브란스 빌딩)</li>
+                    <li>대표자 : 박찬복</li>
+                    <li class="call-number">택배고객센터 1588-2121</li>
+                    <li>사업자등록번호 : 102-81-23012</li>
+                    <li>통신판매신고 : 제2017-서울중구-0433호</li>
+                    <li class="copyright">COPYRIGHT © 2019 LOTTE GLOBAL LOGISTICS CO,.LTD ALL RIGHTS RESERVED.</li>
+                </ul>
+                <img src="./img/Nav/side_logo.jpg" class="ciclogo" alt="인증종합물류기업">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>  
+    let btn_menuList = document.querySelector("#wMenuLogo");
+    let r_btn_menuList = document.querySelector("#rMenuLogo");
+    btn_menuList.addEventListener("click",function(e){
+        let menu_List = document.querySelector(".detailNav");
+        menu_List.style.display == "none" ? menu_List.style.display = "block" : menu_List.style.display = "none";
+        let topnav = document.querySelector(".topNav");
+        topnav.style.display == "none" ? topnav.style.display="block": topnav.style.display="none";
+        let wtopnav = document.querySelector(".wTopNav");
+        wtopnav.style.display == "none" ? wtopnav.style.display = "block" : wtopnav.style.display = "none";
+    });
+    r_btn_menuList.addEventListener("click",function(e){
+        let wtopnav = document.querySelector(".wTopNav");
+        wtopnav.style.display == "none" ? wtopnav.style.display = "block" : wtopnav.style.display = "none";
+        let menu_List = document.querySelector(".detailNav");
+        menu_List.style.display == "none" ? menu_List.style.display = "block" : menu_List.style.display = "none";
+        let topnav = document.querySelector(".topNav");
+        topnav.style.display == "none" ? topnav.style.display="block": topnav.style.display="none";
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

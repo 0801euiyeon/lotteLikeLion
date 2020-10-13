@@ -14,6 +14,7 @@ a{
 header{
     padding: 0;
     margin: 0;
+    color: black;
 }
 .suvVisualArea >div >div{
     display:table-cell;
@@ -37,6 +38,9 @@ header{
 h1.topTitle {
     font-size: 56px;
 }
+.carousel_slide{
+    height: 8vw;
+}
 
 /*nav bar*/
 .topNav{
@@ -51,6 +55,7 @@ h1.topTitle {
     color: ivory;
     background-color:#0000009c;
     align-items: center;
+    z-index: 100;
 }
 .topNav ul{
     list-style: none;
@@ -221,4 +226,77 @@ h1.topTitle {
     width: 30px;
     height: 20px;
     margin-left: 20px;
+}
+
+/* footer */
+footer{
+    font-size: 13px;
+    margin-bottom: 40px;
+    margin-top: 200px;
+}
+.footer-inf1{
+    border-top: 1px solid #c4c6c7;
+}
+.f-bold{
+    font-weight: bold;
+}
+.linklist li{
+    line-height: 78px;
+    float: left;
+    text-align: center;
+    margin-right: 25px;
+    /* width: 17%; */
+}
+li.f-box{
+    margin-left: 150px;
+    margin-right: -100px;
+}
+.f-group{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height:10px;
+    border: 1px solid #c4c6c7;
+}
+ul{
+    list-style: none;
+}
+.footer-inf2{
+    border-top: 1px solid #c4c6c7;
+    margin-top: 100px;
+}
+.ftlogo{
+    width: 160px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.f-info1{
+    margin-left: 150px;
+    margin-top: -50px;
+    width: 600px;
+}
+.f-info1 li{
+    float: left;
+}
+.call-number{
+    font-weight: bold;
+    color: brown;
+}
+.f-info2{
+    margin-left: 150px;
+    padding-left: -100px;
+}
+.footer-inf2 li{
+    float: left;
+    margin-left: 9px;
+    padding-left: 9px;
+    line-height: 25px;
+}
+.copyright{
+    color: grey;
+}
+.footer-inf2 .ciclogo{
+    margin-left: 350px;
 }

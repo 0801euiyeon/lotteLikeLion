@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/topNav.css">
+</head>
+<body>
+    <div class="wTopNav" style="display: none;">
+        <ul class="leftNavContainer">
+            <img src="../img/rLotteLogo.png" class="mainLogo">
+        </ui>
+        <ul class="centerNavContainer">
+            <li class="centerNav"><a href="#">회사소개</a></li>
+            <li class="centerNav"><a href="#">공지사항</a></li>
+            <li class="centerNav"><a href="#">예약접수</a></li>
+            <li class="centerNav"><a href="#">Q&A</a></li>
+        </ul>
+        <ul class="rightNavContainer">
+            <li class="rightNav"><a href="#">로그인</a></li> 
+            <li class="rightNav"> / </li>
+            <li class="rightNav"><a href="#">회원가입</a></li>
+            <li class="rightNav">EN</li>
+            <li><img src="../img/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+        </ui>
+    </div>
+</body>
+</html>
+<script>
+    r_btn_menuList.addEventListener("click",function(e){
+        let menu_List = document.querySelector(".detailNav");
+        menu_List.style.display == "none" ? menu_List.style.display = "block" : menu_List.style.display = "none";
+    });
+
+</script>
