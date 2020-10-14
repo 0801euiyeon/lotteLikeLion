@@ -14,6 +14,7 @@ a{
 header{
     padding: 0;
     margin: 0;
+    color: black;
 }
 .suvVisualArea >div >div{
     display:table-cell;
@@ -37,6 +38,9 @@ header{
 h1.topTitle {
     font-size: 56px;
 }
+.carousel_slide{
+    height: 8vw;
+}
 
 /*nav bar*/
 .topNav{
@@ -51,6 +55,7 @@ h1.topTitle {
     color: ivory;
     background-color:#0000009c;
     align-items: center;
+    z-index: 100;
 }
 .topNav ul{
     list-style: none;
@@ -222,10 +227,6 @@ h1.topTitle {
     height: 20px;
     margin-left: 20px;
 }
-
-
-
-
 
 /* footer */
 footer{
