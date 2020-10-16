@@ -1,0 +1,22 @@
+body{
+    font: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main{
+    background-color: #f5f5f5;
+}
+h1{
+    padding-top: 5vw;
+    font-weight: 700;
+    text-align: center;
+}
+.wTopNav{
+    position: relative;
+}
+.signupBox{
+    margin: 10vmin;
+}
+form>button{
+    margin-top: 3vmin;
+    width: 100%;
+}
