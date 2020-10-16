@@ -1,0 +1,419 @@
+html{
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+header{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.suvVisualArea >div >div{
+    display:table-cell;
+    width: 100%;
+    text-align: center;
+}
+.top_img{
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 410px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #aaa;
+
+}
+.topTitle{
+    position: absolute;
+    top: 200px;
+    padding: 0 40%;
+    margin: 0 auto;
+    color: ivory;
+}
+h1.topTitle {
+    font-size: 56px;
+}
+.carousel_slide{
+    height: 8vw;
+}
+
+/*nav bar*/
+.topNav{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: ivory;
+    background-color:#0000009c;
+    align-items: center;
+    z-index: 100;
+}
+.topNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.topNav ul li{
+    float: left;
+    color: ivory;
+}
+.topNav ul li a{
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 10px 5px;
+    color: ivory;
+    /**background-color: khaki;**/
+}
+
+.leftNavContainer{
+    align-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+}
+.mainLogo{
+    width: 120px;
+    height: 45px;
+
+}
+.centerNavContainer{
+    align-content: center;
+    align-items: center;
+    flex-grow: 4;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 768px){
+    .centerNavContainer{
+        align-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    /* .centerNav{
+        font-size: 10px;
+    }
+    .rightNav{
+        font-size: 7px;
+    } */
+}
+.centerNav{
+    flex-basis: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+.rightNavContainer{
+    margin-right: 2%;
+}
+.rightNav{
+    font-size: 12px;
+}
+#wMenuLogo{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
+/*detailNav*/
+.detailNav{
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 340px;
+    background-color:white;
+    /* justify-content: space-between; */
+}
+.detailNav table{
+    margin: auto;
+    width: 100%;
+}
+.detailNav table tr td{
+    color: black;
+    list-style: none;
+    height: 5vw;
+    text-align: center;
+    width: 27%;
+
+}
+
+/*white nav*/
+.wTopNav{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    background-color:#ffffff;
+    align-items: center;
+}
+.wTopNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.wTopNav ul li{
+    float: left;
+    color: ivory;
+}
+.wTopNav ul li a{
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+}
+.leftNavContainer{
+    align-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+}
+.mainLogo{
+    width: 120px;
+    height: 45px;
+
+}
+.centerNavContainer{
+    align-content: center;
+    align-items: center;
+    flex-grow: 4;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media screen and (max-width: 768px){
+    .centerNavContainer{
+        align-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    /* .centerNav{
+        font-size: 10px;
+    }
+    .rightNav{
+        font-size: 7px;
+    } */
+}
+.centerNav{
+    flex-basis: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+.rightNavContainer{
+    margin-right: 2%;
+}
+.rightNav{
+    font-size: 12px;
+}
+#rMenuLogo{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+
+/*** 지점 찾기 팝업 ***/
+.store_find {padding-bottom: 0;}
+.store_find .layer_header {background:#1b932a url(/front/img/com/bg_logo.png) 754px 10px no-repeat}
+.store_find .layer_header h1 {text-align:left; padding-left:259px}
+.store_find .tit_store {font-size:18px; line-height:24px; color:#fff}
+.store_find .layer_body {position:relative; height:588px; background:none; *zoom:1}
+.store_find .layer_body:after {display:block; content:''; clear:both}
+.store_find .layer_body .wrap_map {float:left; width:638px; height:586px; overflow:hidden; border:1px solid #d7d7d7;}/* 666px -> 638px 수정  2014-11-21  */
+.store_find .layer_body .wrap_store {position:absolute;right:0; top:0; width:320px; background-color:#fff} /* 292px -> 320px  수정  2014-11-21  */
+
+.tab_store {*zoom:1}
+.tab_store:after {display:block; content:''; clear:both}
+.tab_store li {float:left; width:50%;border-bottom:1px solid #d7d7d7; border-left:1px solid #d7d7d7; background-color:#f4f4f4;box-sizing: border-box;}
+.tab_store li:first-child {border-left:none}
+.tab_store li a {display:block; width:100%; height:100%; text-align:center; font-size:16px; line-height:45px; color:#444}
+.tab_store li.on {border-bottom:1px solid #fff; background-color:#fff}
+
+.list_stroe {height:334px;margin-bottom:0px;overflow-y:scroll;}
+.list_stroe li {font-size:14px; line-height:22px; border-bottom:1px solid #d7d7d7}
+.list_stroe li:first-child {border-top:1px solid #d7d7d7}
+.list_stroe li a {display:block;padding: 16px 17px 10px 17px;}  /* 2017-02-20 포켓몬 아이콘 추가 */
+.list_stroe li span {display:block}
+.list_stroe li span:first-child {font-weight: bold;}
+.stroe_src {height:32px; padding:12px 8px 8px 6px} /* 09.26 최웅 수정 */
+.stroe_src .btn_set {min-width:0}
+
+.list_stroe li.no_data {padding:16px 27px 18px}
+
+.list_stroe.type02 {height:334px}/* 460 -> 389 수정 최웅 0922 */
+
+.wrap_store .alR {/* padding-right:30px; *//*2014-09-23 박현아 수정 *//* margin-top: 20px; */padding: 34px 30px 0 0;}
+.wrap_store .alR .btn_set {min-width:0}
+
+/*.storeIcon {width: 300px;position: absolute;bottom: -68px;right: 10px;}*/ /* 2017-03-09 포켓몬 아이콘 수정 */
+.storeIcon {width: 300px;position: static;bottom: 0px;right: 10px;padding: 10px 0 0 10px;}/*2017-03-24일 백정우작업*/
+.storeIcon li {float: left;height:22px;margin: 0px 6px 7px 0px;} /* 2018-11-19 아이콘 추가 */
+.storeIcon li > img {margin-right:5px;}
+.layer_body{
+    margin-top: 100px;
+    width: 1000px;
+}
+.list_stroe{
+    height: 450px;
+}
+.hide{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+/* main */
+.container{
+    width: 1100px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+    margin-top: 100px;
+}
+.main-title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.sub-title{
+    margin-top: 20px;
+    color: #54585a;
+    font-size: 20px;
+}
+.search-bar{
+    border: 4px solid #ed1b24;
+    width: 600px;
+    border-radius: 10px;
+    height: 68px;
+    margin: auto;
+    margin-top: 100px;
+    outline: none;
+}
+.search-f{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+    vertical-align: middle;   
+}
+.search-in{
+    margin-left: 60px;
+    margin-right: 20px;
+    height: 60px;
+    width: 300px;
+    border: none;
+    vertical-align: middle;
+    outline: none;
+}
+::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+    outline: none;
+}
+.search-search{
+    border: none;
+    background-color: white;
+}
+.search-r{
+    width: 40px;
+    vertical-align: middle;
+    outline: none;
+}
+
+
+/* footer */
+footer{
+    font-size: 13px;
+    margin-bottom: 40px;
+    margin-top: 200px;
+}
+.footer-inf1{
+    border-top: 1px solid #c4c6c7;
+}
+.f-bold{
+    font-weight: bold;
+}
+.linklist li{
+    line-height: 78px;
+    float: left;
+    text-align: center;
+    margin-right: 25px;
+    /* width: 17%; */
+}
+li.f-box{
+    margin-left: 150px;
+    margin-right: -100px;
+}
+.f-group{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height:10px;
+    border: 1px solid #c4c6c7;
+}
+ul{
+    list-style: none;
+}
+.footer-inf2{
+    border-top: 1px solid #c4c6c7;
+    margin-top: 100px;
+}
+.ftlogo{
+    width: 160px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.f-info1{
+    margin-left: 150px;
+    margin-top: -90px;
+    width: 600px;
+}
+.f-info1 li{
+    float: left;
+}
+.call-number{
+    font-weight: bold;
+    color: brown;
+}
+.f-info2{
+    margin-left: 150px;
+    padding-left: -100px;
+}
+.footer-inf2 li{
+    float: left;
+    margin-left: 9px;
+    padding-left: 9px;
+    line-height: 25px;
+}
+.copyright{
+    color: grey;
+}
+.footer-inf2 .ciclogo{
+    margin-left: 350px;
+}
