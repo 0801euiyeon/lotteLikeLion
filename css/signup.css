@@ -14,9 +14,75 @@ h1{
     position: relative;
 }
 .signupBox{
-    margin: 10vmin;
+}
+.signupIdContainer> li{
+    float: left;
+}
+.signupIdContainer{
+    justify-content: space-between;
+}
+#idInputBox{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 50vw;
+}
+#idBtnBox{
+    margin-left: 10%;
+    width: 20vmin;
+    background-color: rgb(97, 96, 96);
+    color: white;
+}
+.signupPwBox> li{
+    float: left;
+    margin-top: 2%;
+}
+#pwBtnBox{
+    width: 20vmin;
+    margin-left: 10%;
+    background-color: rgb(110, 63, 63);
+    color: white;
+}
+.mailInputBox >ul li{
+    float: left;
+
+}
+.signupMailContainer{
+    display: flex;
+}
+#mailSelect{
+    width: 20vw;
+    margin-left: 2vw;
+}
+#mailBtnBox{
+    width: 20vmin;
+    margin-left: 10%;
+    color: white;
+    background-color: rgba(158, 74, 74, 0.767);
+}
+.callNumBox>ul li{
+    float: left;    
+
+}
+#callComSelect{
+    width: 15vw;
+}
+#callNumSelect{
+    width: 15vw;
+}
+#callNumBtnBox{
+    width: 20vmin;
+    margin-left: 10%;
+    background-color:  rgba(187, 48, 48, 0.767);
+    color: white;
+}
+.checkBoxContainer{
+    margin-top:5%;
+}
+.checkBoxContainer ul li{
+    margin-bottom: -1vw;
 }
 form>button{
     margin-top: 3vmin;
-    width: 100%;
+    width: 20vmin;
+  
 }

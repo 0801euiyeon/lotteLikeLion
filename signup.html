@@ -73,49 +73,128 @@
         </div>
     </div>
     <main>
-        <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-6">
-                <div class="signupContainer">
-                    <h1>회원가입</h1><br>
-                    <form class="signupBox">
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1"></label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1"></label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect2"></label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1"></label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-danger">가입하기</button>
-                    </form>
+        <div class="signupContainer">
+            <h1>회원가입</h1><br>
+            <form class="signupBox" >
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"></label>
+                    <ul class="signupIdContainer">
+                        <li><input class="form-control" id="idInputBox" placeholder="아이디를 입력하세요"></li>
+                        <li><input type="button" class="form-control" id="idBtnBox" value="아이디확인"></li>
+                    </ul> 
                 </div>
-            </div>
-            <div class="col">
-            </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"></label>
+                    <ul class="signupPwContainer">             
+                        <li><input type="password"class="form-control" class="inputPwBox" style="width: 50vw;" placeholder="비밀번호를 입력하세요"></li>
+                        <div class="signupPwBox">
+                            <li><input type="password" class="form-control" class="inputPwBox" style="width: 50vw;" placeholder="비밀번호를 입력하세요"></li>
+                            <li><input type="button"class="form-control" id="pwBtnBox" value="비밀번호 확인"></li>
+                        </div>
+                    </ul> 
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"></label>
+                  <div class="mailInputBox">
+                    <ul class="signupMailContainer">
+                        <li><input class="form-control" class="mailInput" style="width: 28vw;"placeholder="메일주소를 입력하세요"></li>
+                        <li><select class="form-control" class="form-control" id="mailSelect">
+                            <option>@gmail.com</option>
+                            <option>@naver.com</option>
+                            <option>@daum.net</option>
+                            <option>@outlook.com</option>
+                            <option>@icloud.com</option>
+                            </select>
+                        </li>
+                        <li><input type="button" class="form-control" id="mailBtnBox" value="이메일 확인"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2"></label>
+                  <div class="callNumBox">
+                    <ul>
+                        <div>
+                            <li><select class="form-control" class="form-control" id="callComSelect">
+                                <option>KT</option>
+                                <option>SKT</option>
+                                <option>LG U+</option>
+                                <option>free T</option>
+                                <option>T Plus</option>
+                                </select>
+                            </li>
+                            <li><select class="form-control"class="form-control" id="callNumSelect">
+                                <option>010</option>
+                                <option>02</option>
+                                <option>052</option>
+                                <option>053</option>
+                                <option>064</option>
+                                </select>
+                            </li>
+                            <li><input class="form-control" class="numInput" style="width: 20vw;"placeholder="번호를 입력하세요"></li>                            
+                        </div>
+                        <li><input type="button" class="form-control" id="callNumBtnBox" value="연락처 확인"></li>  
+                    </ul>
+                  </div>
+                </div>
+                <div class="checkBoxContainer">
+                    <ul>
+                        <li>
+                            <label for="exampleFormControlInput1"></label>
+                                <div class="input-group mb-3"  style="width: 70vw">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div> 
+                        </li>
+                        <li>
+                            <label for="exampleFormControlInput1"></label>
+                                <div class="input-group mb-3"  style="width: 70vw;">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div>
+                        </li>
+                        <li>
+                            <label for="exampleFormControlInput1"></label>
+                                <div class="input-group mb-3"  style="width: 70vw;">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div>
+                        </li>
+                        <li>
+                            <label for="exampleFormControlInput1"></label>
+                            <div class="input-group mb-3"  style="width: 70vw;">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                            </div> 
+                        </li>
+                                               
+                    </ul>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"></label>
+                    <button type="submit" class="btn btn-danger">가입하기</button>
+                </div>         
+            </form>
         </div>
-        
     </main>
     <footer>
         <div class="footer-inf1">
