@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/qna.css">
-    <link rel="stylesheet" href="css/topNav.css?ver=1">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/topNav.css">
     <title>롯데택배</title>
 </head>
 <body>
@@ -17,11 +15,11 @@
 
     <!-- header -->
     <header>
-        <img src="./img/qna-a/top.jpg" class="top_img">   <!--상단 이미지 넣어주세요-->
+        <img src="img/qna-a/qna-detail.png" class="top_img">   <!--상단 이미지 넣어주세요-->
         <div class="subVisualArea">
             <div class="inner">
-                <h1 class="topTitle">Q&A</h1> <!--h1 태그 안에 글자만 수정해주세요-->
-            </div>
+                <a href="qna-list.html"><h1 class="topTitle">Q&A</h1></a><!--h1 태그 안에 글자만 수정해주세요-->
+            </div> 
         </div>
     </header>
 
@@ -34,32 +32,32 @@
             <li class="centerNav"><a href="#">회사소개</a></li>
             <li class="centerNav"><a href="#">공지사항</a></li>
             <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="#">Q&A</a></li>
+            <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
         </ul>
         <ul class="rightNavContainer">
-            <li class="rightNav"><a href="#">로그인</a></li> 
+            <li class="rightNav"><a href="login.html">로그인</a></li> 
             <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="#">회원가입</a></li>
+            <li class="rightNav"><a href="signup.html">회원가입</a></li>
             <li class="rightNav">EN</li>
-            <li><img src="./img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+            <li><img src="/img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
         </ui>
     </nav>
     <div class="wTopNav" style="display: none;">
         <ul class="leftNavContainer">
-            <a href="../main.html"><img src="./img/Nav/rLotteLogo.png" class="mainLogo"></a>
+            <a href="../main.html"><img src="../img/rlottelogo.png" class="mainLogo"></a>
         </ui>
         <ul class="centerNavContainer">
             <li class="centerNav"><a href="#">회사소개</a></li>
             <li class="centerNav"><a href="#">공지사항</a></li>
             <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="#">Q&A</a></li>
+            <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
         </ul>
         <ul class="rightNavContainer">
-            <li class="rightNav"><a href="#">로그인</a></li> 
+            <li class="rightNav"><a href="login.html">로그인</a></li> 
             <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="#">회원가입</a></li>
+            <li class="rightNav"><a href="signup.html">회원가입</a></li>
             <li class="rightNav">EN</li>
-            <li><img src="./img/Nav/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+            <li><img src="../img/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
         </ui>
     </div>
     <div class="detailNav" style="display: none">
@@ -98,46 +96,6 @@
             </div>
         </div>
     </div>
-
-    <main>
-        <div class="container">
-            <div class="text-center">
-                <h1 class="main-title">Q&A</h1>
-                <h3 class="sub-title">고객 불편 사항에 대해 신속히 답해드립니다.</h3>
-            </div>
-            <div class="question-box">
-                <form action="" method="post" class="q-box">
-                      <div class="q-line">
-                        <label for="title">제목</label>
-                        <input type="text" id="title" />
-                    </div>
-                    <div class="q-line">
-                        <label for="d-number">전화번호</label>
-                        <input type="delivery-number" id="phone-number" placeholder="운송장에 등록된 번호를 -없이 입력해주세요.">
-                    </div>
-                    <div class="q-line">
-                        <label for="d-number">운송장 번호</label>
-                        <input type="delivery-number" id="delivery-number" placeholder="운송장 번호를 -없이 입력해주세요.">
-                    </div>
-
-                    <!-- <div>
-                        <label for="num">운송장번호</label>
-                        <input type="number" id="num"/>
-                    </div> -->
-                    <div class="q-line">
-                        <label for="msg">접수내용</label>
-                        <textarea id="msg" ></textarea>
-                    </div>
-                </form>
-                    <div class="qna-bt">
-                        <button type="button" class="qna-btn" href="">확인</button>
-                        <a href="" class="qna-btn" href="">취소</a>
-                    </div>
-            </div>
-    
-        </div>
-    </main>
-
     <footer>
         <div class="footer-inf1">
             <div class="container">
