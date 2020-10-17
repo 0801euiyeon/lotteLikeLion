@@ -1,6 +1,7 @@
 body{
     font: 400;
     font-family: 'Noto Sans KR', sans-serif;
+    color: black;
 }
 main{
     background-color: #f5f5f5;
@@ -8,6 +9,7 @@ main{
 form{
     background-color: #f5f5f5;
 }
+
 h1{
     padding-top: 5vw;
     font-weight: 700;
@@ -17,7 +19,7 @@ h1{
     position: relative;
 }
 .signupBox{
-    margin-left:20vw;
+ margin-left: 20%;
 }
 @media screen and (max-width: 768px){
     .signupBox{
@@ -29,7 +31,7 @@ h1{
 }
 #idInputBox{
     background-color: rgb(255, 255, 255);
-    color: white;
+    color: black;
     width: 50vw;
 }
 #idBtnBox{
@@ -82,16 +84,20 @@ h1{
     color: white;
 }
 .checkBoxContainer{
-    width: 70vw;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
 }
 .checkBoxContainer ul li{
     margin-top: 50px;
     padding: 0;
     padding-left: 0%;
 }
-
-form>button{
+#agree{
+    color: rgb(86, 86, 199);
+}
+div> ul> li >button{
     margin-top: 3vmin;
-    width: 20vmin;
+    width: 60vw;
   
 }

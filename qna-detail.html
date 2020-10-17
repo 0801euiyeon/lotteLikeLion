@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/topNav.css">
+    <link rel="stylesheet" href="css/qna-detail.css">
+    <link rel="stylesheet" href="css/qna-list.css">
     <title>롯데택배</title>
 </head>
 <body>
@@ -24,78 +26,102 @@
     </header>
 
     <!-- nav var -->
-    <nav class="topNav">
-        <ul class="leftNavContainer">
-            <a href="main.html"><img src="/img/Nav/lottelogo.png" class="mainLogo"></a>
-        </ui>
-        <ul class="centerNavContainer">
-            <li class="centerNav"><a href="#">회사소개</a></li>
-            <li class="centerNav"><a href="#">공지사항</a></li>
-            <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
-        </ul>
-        <ul class="rightNavContainer">
-            <li class="rightNav"><a href="login.html">로그인</a></li> 
-            <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="signup.html">회원가입</a></li>
-            <li class="rightNav">EN</li>
-            <li><img src="/img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
-        </ui>
-    </nav>
-    <div class="wTopNav" style="display: none;">
-        <ul class="leftNavContainer">
-            <a href="../main.html"><img src="../img/rlottelogo.png" class="mainLogo"></a>
-        </ui>
-        <ul class="centerNavContainer">
-            <li class="centerNav"><a href="#">회사소개</a></li>
-            <li class="centerNav"><a href="#">공지사항</a></li>
-            <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
-        </ul>
-        <ul class="rightNavContainer">
-            <li class="rightNav"><a href="login.html">로그인</a></li> 
-            <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="signup.html">회원가입</a></li>
-            <li class="rightNav">EN</li>
-            <li><img src="../img/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
-        </ui>
-    </div>
-    <div class="detailNav" style="display: none">
-        <div style="display: flex;">
-            <div style="flex-grow: 0.8;">
-            </div>
-            <div style="flex-grow: 3;">
-                <table class="detailTableContainer">
-                    <tr class="detailTable">
-                        <td>회사소개</td>
-                        <td>택배서비스</td>
-                        <td>택배 조회</td>
-                        <td>Q&A</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>투자정보</td>
-                        <td>네트워크</td>
-                        <td>위탁장소지정</td>
-                        <td>자주 묻는 질문</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>인재채용</td>
-                        <td></td>
-                        <td>택배접수</td>
-                        <td>고객의소리</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>PR</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <div  style="flex-grow: 1.5;">
+    <div class="navVar">
+        <nav class="topNav">
+            <ul class="leftNavContainer">
+                <a href="main.html"><img src="/img/Nav/lottelogo.png" class="mainLogo"></a>
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#noticeTitle">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="login.html">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="signup.html">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+            </ui>
+        </nav>
+        <div class="wTopNav" style="display: none;">
+            <ul class="leftNavContainer">
+                <img src="/img/Nav/rLotteLogo.png" class="mainLogo">
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#noticeTitle">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="login.html">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="signup.html">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/rMenuLogo.png" id="rMenuLogo"></li>
+            </ui>
+        </div>
+        <div class="detailNav" style="display: none">
+            <div style="display: flex;">
+                <div style="flex-grow: 0.8;">
+                </div>
+                <div style="flex-grow: 3;">
+                    <table class="detailTableContainer">
+                        <tr class="detailTable">
+                            <td><a href="#">회사소개</a></td>
+                            <td><a href="#">택배서비스</a></td>
+                            <td><a href="lookup.html">택배 조회</a></td>
+                            <td><a href="qna-list.html">Q&A</a></td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>투자정보</td>
+                            <td>네트워크</td>
+                            <td>위탁장소지정</td>
+                            <td><a href="faq-a.html">자주 묻는 질문</a></td> 
+                        </tr>
+                        <tr class="detailTable">
+                            <td>인재채용</td>
+                            <td></td>
+                            <td><a href="receive.html">택배접수</a></td>
+                            <td><a href="sori.html">고객의소리</a></td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>PR</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div  style="flex-grow: 1.18;">
+                </div>
             </div>
         </div>
     </div>
+    <main>
+        <div class="qnaDetail">
+            <div class="text-center">
+                <h1 class="main-title">Q&A 상세</h1>
+                <h3 class="sub-title">고객님이 작성하신 Q&A 글입니다.<h3>
+                <br>
+            </div>
+            <div class="qnaDetailTitle">
+                <h3>배송 너무 느리네요</h3>
+            </div>
+            <div class="qnaDetailMaintext">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo aperiam numquam perferendis, repellat omnis praesentium tenetur officiis quia eius rerum, quis in! Cupiditate dolorum laborum tempora architecto repudiandae ex!
+                Pariatur quis quidem tempora numquam fugit ab voluptate voluptatem, neque, voluptas amet unde necessitatibus ea temporibus voluptatibus nemo minima illum consectetur enim animi? Eius, adipisci saepe repellat obcaecati accusantium consequatur.
+                Omnis dolores mollitia nobis sunt dignissimos? Voluptatibus, dolore accusantium perferendis tempore doloremque assumenda, eos fugiat dolorum aspernatur commodi libero cupiditate minima provident similique praesentium voluptatum ipsam quidem explicabo placeat quisquam?
+                Minima nulla reprehenderit aperiam, culpa, nemo quisquam ratione distinctio, aspernatur delectus illo exercitationem. Delectus quaerat pariatur non animi, temporibus nihil distinctio! Quam nesciunt modi saepe explicabo quidem, delectus odio iure.
+                Fuga alias voluptates est animi sapiente voluptatum quisquam dicta, labore dignissimos voluptatem reprehenderit a placeat quaerat totam possimus, mollitia maxime recusandae ab? Tempora ipsum consectetur sit, itaque rerum quo vel. lorem*3</p>
+            </div>
+            <div class="qna-bt">
+                <a href="qna.html"><button type="button" class="qna-btn">글쓰기</button></a>
+            </div>  
+        </div>
+    </main>
     <footer>
         <div class="footer-inf1">
             <div class="container">
@@ -108,7 +134,6 @@
                     <li class="f-box">
                         <a class="f-group">패밀리 사이트</a>
                         <a class="f-group">부가서비스</a>
-
                     </li>
                     <li>
                     </li>
