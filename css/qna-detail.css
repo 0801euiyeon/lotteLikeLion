@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font: 400;
+    background-color: #f5f5f5;
+}
+main{
+    background-color: #f5f5f5;
+}
+h1{
+    font: 700;
+}
+.qnaDetail{
+    text-align: center;
+    margin: 50px 12% 0 12%;
+}
+
+@media screen and (max-width: 768px){
+    .qnaDetail{
+        text-align: center;
+        margin: 30px 5% 0 5%;
+    }
+    
+}
+.qnaDetailTitle{
+    font-family: 'Noto Sans KR', sans-serif;
+    border: solid 0.1px rgba(0, 0, 0, 0.3);
+    border-radius:  8px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.qnaDetailMaintext{
+    font-family: 'Noto Sans KR', sans-serif;
+    border: solid 0.1px rgba(0, 0, 0, 0.3);
+    border-radius:  8px;
+    padding: 5px;
+    background-color: white;
+}
+.qna-btn{
+    margin-top: 10px;
+    margin-bottom: 5%;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 60px;
+    font-weight: bold;
+    background-color: white;
+    border: 5px solid #ed1b24;
+}
+.qna-bt{
+    margin-top: 10px;
+    text-align: center;
+}

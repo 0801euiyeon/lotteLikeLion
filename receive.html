@@ -24,75 +24,77 @@
     </header>
 
     <!-- nav var -->
-    <nav class="topNav">
-        <ul class="leftNavContainer">
-            <img src="./img/Nav/lottelogo.png" class="mainLogo">
-        </ui>
-        <ul class="centerNavContainer">
-            <li class="centerNav"><a href="#">회사소개</a></li>
-            <li class="centerNav"><a href="#">공지사항</a></li>
-            <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="#">Q&A</a></li>
-        </ul>
-        <ul class="rightNavContainer">
-            <li class="rightNav"><a href="#">로그인</a></li> 
-            <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="#">회원가입</a></li>
-            <li class="rightNav">EN</li>
-            <li><img src="./img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
-        </ui>
-    </nav>
-    <div class="wTopNav" style="display: none;">
-        <ul class="leftNavContainer">
-            <a href="../main.html"><img src="./img/Nav/rLotteLogo.png" class="mainLogo"></a>
-        </ui>
-        <ul class="centerNavContainer">
-            <li class="centerNav"><a href="#">회사소개</a></li>
-            <li class="centerNav"><a href="#">공지사항</a></li>
-            <li class="centerNav"><a href="#">예약접수</a></li>
-            <li class="centerNav"><a href="#">Q&A</a></li>
-        </ul>
-        <ul class="rightNavContainer">
-            <li class="rightNav"><a href="#">로그인</a></li> 
-            <li class="rightNav"> / </li>
-            <li class="rightNav"><a href="#">회원가입</a></li>
-            <li class="rightNav">EN</li>
-            <li><img src="./img/Nav/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
-        </ui>
-    </div>
-    <div class="detailNav" style="display: none">
-        <div style="display: flex;">
-            <div style="flex-grow: 0.8;">
-            </div>
-            <div style="flex-grow: 3;">
-                <table class="detailTableContainer">
-                    <tr class="detailTable">
-                        <td>회사소개</td>
-                        <td>택배서비스</td>
-                        <td>택배 조회</td>
-                        <td>Q&A</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>투자정보</td>
-                        <td>네트워크</td>
-                        <td>위탁장소지정</td>
-                        <td>자주 묻는 질문</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>인재채용</td>
-                        <td></td>
-                        <td>택배접수</td>
-                        <td>고객의소리</td>
-                    </tr>
-                    <tr class="detailTable">
-                        <td>PR</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <div  style="flex-grow: 1.5;">
+    <div class="navVar">
+        <nav class="topNav">
+            <ul class="leftNavContainer">
+                <a href="main.html"><img src="/img/Nav/lottelogo.png" class="mainLogo"></a>
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#noticeTitle">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="login.html">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="signup.html">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+            </ui>
+        </nav>
+        <div class="wTopNav" style="display: none;">
+            <ul class="leftNavContainer">
+                <img src="/img/Nav/rLotteLogo.png" class="mainLogo">
+            </ui>
+            <ul class="centerNavContainer">
+                <li class="centerNav"><a href="#">회사소개</a></li>
+                <li class="centerNav"><a href="#noticeTitle">공지사항</a></li>
+                <li class="centerNav"><a href="#">예약접수</a></li>
+                <li class="centerNav"><a href="qna-list.html">Q&A</a></li>
+            </ul>
+            <ul class="rightNavContainer">
+                <li class="rightNav"><a href="login.html">로그인</a></li> 
+                <li class="rightNav"> / </li>
+                <li class="rightNav"><a href="signup.html">회원가입</a></li>
+                <li class="rightNav">EN</li>
+                <li><img src="/img/Nav/rMenuLogo.png" id="rMenuLogo"></li>
+            </ui>
+        </div>
+        <div class="detailNav" style="display: none">
+            <div style="display: flex;">
+                <div style="flex-grow: 0.8;">
+                </div>
+                <div style="flex-grow: 3;">
+                    <table class="detailTableContainer">
+                        <tr class="detailTable">
+                            <td><a href="#">회사소개</a></td>
+                            <td><a href="#">택배서비스</a></td>
+                            <td><a href="lookup.html">택배 조회</a></td>
+                            <td><a href="qna-list.html">Q&A</a></td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>투자정보</td>
+                            <td>네트워크</td>
+                            <td>위탁장소지정</td>
+                            <td><a href="faq-a.html">자주 묻는 질문</a></td> 
+                        </tr>
+                        <tr class="detailTable">
+                            <td>인재채용</td>
+                            <td></td>
+                            <td><a href="receive.html">택배접수</a></td>
+                            <td><a href="sori.html">고객의소리</a></td>
+                        </tr>
+                        <tr class="detailTable">
+                            <td>PR</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div  style="flex-grow: 1.18;">
+                </div>
             </div>
         </div>
     </div>

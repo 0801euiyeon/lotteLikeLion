@@ -4,6 +4,7 @@ html{
 body{
     padding: 0;
     margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 a{
     text-decoration: none;
@@ -31,9 +32,10 @@ header{
 .topTitle{
     position: absolute;
     top: 200px;
-    padding: 0 40%;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
     color: ivory;
+    font-weight: 700;
 }
 h1.topTitle {
     font-size: 56px;
@@ -69,7 +71,7 @@ h1.topTitle {
     color: ivory;
 }
 .topNav ul li a{
-    font-weight: 500;
+    font-weight: 700;
     list-style: none;
     margin: 0;
     text-align: center;
@@ -111,7 +113,6 @@ h1.topTitle {
 }
 .centerNav{
     flex-basis: 500px;
-    text-align: center;
     font-size: 15px;
 }
 .rightNavContainer{
@@ -132,18 +133,20 @@ h1.topTitle {
     width: 100%;
     height: 340px;
     background-color:white;
+    z-index: 100;
     /* justify-content: space-between; */
 }
 .detailNav table{
     margin: auto;
     width: 100%;
+    text-align: center;
 }
 .detailNav table tr td{
     color: black;
     list-style: none;
     height: 5vw;
     text-align: center;
-    width: 27%;
+    width: 22%;
 
 }
 
@@ -160,6 +163,8 @@ h1.topTitle {
     color: rgb(0, 0, 0);
     background-color:#ffffff;
     align-items: center;
+    z-index: 100;
+    border-bottom: solid 0.1px rgba(0, 0, 0, 0.363);
 }
 .wTopNav ul{
     list-style: none;
@@ -232,7 +237,7 @@ h1.topTitle {
 footer{
     font-size: 13px;
     margin-bottom: 40px;
-    margin-top: 200px;
+ 
 }
 .footer-inf1{
     border-top: 1px solid #c4c6c7;
