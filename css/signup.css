@@ -19,24 +19,20 @@ h1{
     position: relative;
 }
 .signupBox{
- margin-left: 20%;
+    margin-left: 31%;
+    margin-right: 20%;
 }
-@media screen and (max-width: 768px){
-    .signupBox{
-        margin-left:10vw;
-    }
-}
+
 .signupIdContainer> li{
     float: left;
 }
 #idInputBox{
     background-color: rgb(255, 255, 255);
     color: black;
-    width: 50vw;
 }
 #idBtnBox{
-    margin-left: 10%;
-    width: 20vmin;
+    margin-left: 15px;
+    width: 25vmin;
     background-color: rgb(97, 96, 96);
     color: white;
 }
@@ -45,25 +41,30 @@ h1{
     margin-top: 2%;
 }
 #pwBtnBox{
-    width: 20vmin;
-    margin-left: 10%;
+    width: 25vmin;
+    margin-left: 15px;
     background-color: rgb(110, 63, 63);
     color: white;
+    font-size: 15px;
 }
+
 .mailInputBox >ul li{
     float: left;
-
+}
+.mailInputBox{
+    margin-right: 0;
+    padding-right: 0;
 }
 .signupMailContainer{
     display: flex;
 }
 #mailSelect{
-    width: 20vw;
-    margin-left: 2vw;
+    margin-left: 0px;
+    width: 20vmin;
 }
 #mailBtnBox{
-    width: 20vmin;
-    margin-left: 10%;
+    width: 25vmin;
+    margin-left: 15px;
     color: white;
     background-color: rgba(158, 74, 74, 0.767);
 }
@@ -71,22 +72,11 @@ h1{
     float: left;    
 
 }
-#callComSelect{
-    width: 15vw;
-}
-#callNumSelect{
-    width: 15vw;
-}
 #callNumBtnBox{
-    width: 20vmin;
-    margin-left: 10%;
+    width: 25vmin;
+    margin-left: 15px;
     background-color:  rgba(187, 48, 48, 0.767);
     color: white;
-}
-.checkBoxContainer{
-    width: 60vw;
-    margin: 0;
-    padding: 0;
 }
 .checkBoxContainer ul li{
     margin-top: 50px;
@@ -96,8 +86,49 @@ h1{
 #agree{
     color: rgb(86, 86, 199);
 }
-div> ul> li >button{
-    margin-top: 3vmin;
-    width: 60vw;
-  
+@media screen and (max-width: 768px){
+    body{
+        font-size: 15px;
+    }
+    .signupBox{
+        margin-left: 10vmin;
+        margin-right: 10vmin;
+       }
+    #idBtnBox{
+        font-size: 15px;
+        margin-left: 10%;
+        width: 20vmin;
+        background-color: rgb(97, 96, 96);
+        color: white;
+    }
+    #pwBtnBox{
+        font-size: 15px;
+        width: 20vmin;
+        margin-left: 10px;
+        background-color: rgb(110, 63, 63);
+        color: white;
+        font-size: 15px;
+    }
+    #mailBtnBox{
+        font-size: 15px;
+        width: 20vmin;
+        margin-left: 10px;
+        color: white;
+        background-color: rgba(158, 74, 74, 0.767);
+    }
+    #mailSelect{
+        font-size: 15px;
+        width: 20vmin;
+    }
+    #callNumBtnBox{
+        width: 20vmin;
+        margin-left: 10px;
+        background-color:  rgba(187, 48, 48, 0.767);
+        color: white;
+    }
+    div> ul> li >button{
+        margin-top: 3vmin;
+        width: 70vmin;
+      
+    }
 }
